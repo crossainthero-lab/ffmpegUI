@@ -22,6 +22,10 @@ Use `python3 app.py --no-browser` to open the printed address yourself, or `--po
 
 Conversions re-encode media; MP3 and WAV extract audio. Large files require enough free disk space for temporary input and output files and enough browser memory to download the result. Temporary files are removed when conversion finishes. Errors from FFmpeg appear in the app.
 
+## Add to the applications menu (Linux)
+
+Run `./install-launcher.sh` from this folder. Then search for **ffmpegUI** in your applications menu. The launcher uses this checkout, so keep the folder in place. To remove the launcher, delete `~/.local/share/applications/ffmpegui.desktop`. Launching the app starts a local server in the background; to stop it, run `pkill -f "python3 .*ffmpegUI/app.py"`.
+
 ## License
 
 MIT. FFmpeg is a separate project and is subject to its own licensing terms.
